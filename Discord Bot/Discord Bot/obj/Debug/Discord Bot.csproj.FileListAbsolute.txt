@@ -90,3 +90,7 @@ C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\obj\Debug\Discor
 C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\obj\Debug\Discord Bot.csproj.CopyComplete
 C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\obj\Debug\Discord Bot.exe
 C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\obj\Debug\Discord Bot.pdb
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.SlashCommands.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.VoiceNext.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.SlashCommands.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.VoiceNext.xml

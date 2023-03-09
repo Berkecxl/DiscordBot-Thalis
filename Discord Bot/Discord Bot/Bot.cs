@@ -7,6 +7,7 @@ using DSharpPlus.Entities;
 using DSharpPlus.EventArgs;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Interactivity.Extensions;
+using DSharpPlus.SlashCommands;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

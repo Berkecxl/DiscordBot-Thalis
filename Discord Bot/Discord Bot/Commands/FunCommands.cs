@@ -6,6 +6,7 @@ using DSharpPlus.CommandsNext;
 using DSharpPlus.CommandsNext.Attributes;
 using DSharpPlus.Entities;
 using DSharpPlus.Interactivity.Extensions;
+using DSharpPlus.SlashCommands;
 using Emzi0767;
 using System;
 using System.Collections.Generic;

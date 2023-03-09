@@ -1,0 +1,46 @@
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Discord Bot.exe.config
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Discord Bot.exe
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Discord Bot.pdb
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\ConcurrentCollections.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.CommandsNext.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.Interactivity.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Emzi0767.Common.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Buffers.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Collections.Immutable.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Memory.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Threading.Channels.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.ValueTuple.dll
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\ConcurrentCollections.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.CommandsNext.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\DSharpPlus.Interactivity.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Emzi0767.Common.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Buffers.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Collections.Immutable.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Memory.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Threading.Channels.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\System.ValueTuple.xml
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\obj\Debug\Discord Bot.csproj.AssemblyReference.cache
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\obj\Debug\Discord Bot.csproj.SuggestedBindingRedirects.cache
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\obj\Debug\Discord Bot.csproj.CoreCompileInputs.cache
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\obj\Debug\Discord Bot.csproj.CopyComplete
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\obj\Debug\Discord Bot.exe
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\obj\Debug\Discord Bot.pdb
+C:\Users\celik\source\repos\Discord Bot\Discord Bot\bin\Debug\config.json

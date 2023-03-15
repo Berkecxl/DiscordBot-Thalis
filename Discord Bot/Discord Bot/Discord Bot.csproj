@@ -157,6 +157,7 @@
     <Compile Include="Abstract\FunCommandsAbstract\IRandomGifs.cs" />
     <Compile Include="Abstract\BaseAbstract\IUserHelper.cs" />
     <Compile Include="Abstract\GameCommandsAbstract\IRankedGameHelper.cs" />
+    <Compile Include="Abstract\ModCommandsAbstract\IModCommandsHelper.cs" />
     <Compile Include="Bot.cs" />
     <Compile Include="Commands\CasualCommands.cs" />
     <Compile Include="Commands\FunCommands.cs" />
@@ -167,6 +168,7 @@
     <Compile Include="Helper\GameCommandsHelper\RankedGameHelper.cs" />
     <Compile Include="Helper\FunCommandsHelper\RandomGifs.cs" />
     <Compile Include="Build\Program.cs" />
+    <Compile Include="Helper\ModCommandsHelper\ModCommandsHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,9 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\CasualCommandsAbstract\" />
-    <Folder Include="Abstract\ModCommandsAbstract\" />
     <Folder Include="Helper\CassualCommandsHelper\" />
-    <Folder Include="Helper\ModCommandsHelper\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

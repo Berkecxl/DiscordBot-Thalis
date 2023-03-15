@@ -18,10 +18,17 @@ namespace Discord_Bot.Commands
     {
 
         [Command("sil")]
-        [RequirePermissions(Permissions.ManageMessages)]
         [Cooldown(1, 3, CooldownBucketType.Guild)]
         public async Task DeleteMessage(CommandContext ctx, int piece)
         {
+            if (!(ctx.Member.Permissions.HasPermission(Permissions.ManageMessages)))
+            {
+                var requirePermissonMessage = "Bu komut için gerekli yetkiye sahip değilsiniz.";
+
+                await ctx.Channel.SendMessageAsync(requirePermissonMessage);
+
+                throw new Exception();
+            }
 
             if (piece > 51 || piece < 0)
             {
@@ -29,10 +36,8 @@ namespace Discord_Bot.Commands
             }
             else
             {
+                //ctx.Channel.DeleteMessagesAsync(new DiscordMessage());
             }
-
-
-
 
         }
 
@@ -165,7 +170,7 @@ namespace Discord_Bot.Commands
             {
                 if (ex.InnerException is UnauthorizedException)
                 {
-
+                    
                 }
                 else if (ex.InnerException is NotFoundException)
                 {
@@ -188,10 +193,27 @@ namespace Discord_Bot.Commands
             await ctx.Channel.SendMessageAsync(embed: unbanMessage);
         }
 
-        [Command("kick")]
+        //etiketli mute, TODO Değişecek
+        [Command("mute")]
         [Cooldown(5, 120, CooldownBucketType.User)]
-        public async Task TagKickMember()
+        public async Task MuteMember(CommandContext ctx, ulong id, int time)
         {
+            if (!(ctx.Member.Permissions.HasPermission(Permissions.MuteMembers)))
+            {
+                var requirePermissonMessage = "Bu komut için gerekli yetkiye sahip değilsiniz.";
+
+                await ctx.Channel.SendMessageAsync(requirePermissonMessage);
+
+                throw new Exception();
+            }
+
+            if (time > 0 && time < 600)
+            {
+                DateTime dateTime = DateTime.Now.AddMinutes(time);
+                DiscordMember member = await ctx.Guild.GetMemberAsync(id);
+                DiscordRole muteRole = ctx.Guild.GetRole(1081617273694990428);
+                await member.GrantRoleAsync(muteRole);
+            }
 
         }
     }

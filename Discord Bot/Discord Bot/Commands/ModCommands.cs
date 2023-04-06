@@ -11,6 +11,7 @@ using DSharpPlus;
 using System.Runtime.InteropServices;
 using DSharpPlus.Exceptions;
 using DSharpPlus.CommandsNext.Exceptions;
+using Discord_Bot.Constant;
 
 namespace Discord_Bot.Commands
 {
@@ -215,6 +216,148 @@ namespace Discord_Bot.Commands
                 await member.GrantRoleAsync(muteRole);
             }
 
+        }
+
+        //etiketli erkek kayıt
+        [Command("e")]
+        [Cooldown(15, 120, CooldownBucketType.User)]
+        public async Task TagSignManMember(CommandContext ctx, DiscordMember user)
+        {
+            DiscordRole memberRole = ctx.Guild.GetRole(Constants.MemberRoleId);
+
+            if (ctx.Member.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) == null || !(ctx.Member.Permissions.HasPermission(Permissions.ChangeNickname)))
+            {
+                var requirePermissonMessage = "Bu komut için gerekli yetkiye sahip değilsiniz.";
+
+                await ctx.Channel.SendMessageAsync(requirePermissonMessage);
+
+                throw new Exception();
+            }
+
+            if (user.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) != null)
+            {
+                await ctx.Channel.SendMessageAsync("Bu kullanıcı zaten kayıtlı");
+            }
+            else
+            {
+                try
+                {
+                    await user.GrantRoleAsync(memberRole);
+                    await ctx.Channel.SendMessageAsync("Kayıt Başarılı ile gerçekleşti.");
+                }
+                catch (Exception ex)
+                {
+                    await ctx.Channel.SendMessageAsync(ex.Message);
+                }
+            }
+        }
+
+        //id'li erkek kayıt
+        [Command("e")]
+        [Cooldown(15, 120, CooldownBucketType.User)]
+        public async Task IdSignManMember(CommandContext ctx, ulong id)
+        {
+            DiscordRole memberRole = ctx.Guild.GetRole(Constants.MemberRoleId);
+            DiscordMember user = await ctx.Guild.GetMemberAsync(id);
+
+            if (ctx.Member.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) == null || !(ctx.Member.Permissions.HasPermission(Permissions.ChangeNickname)))
+            {
+                var requirePermissonMessage = "Bu komut için gerekli yetkiye sahip değilsiniz.";
+
+                await ctx.Channel.SendMessageAsync(requirePermissonMessage);
+
+                throw new Exception();
+            }
+
+            if (user.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) != null)
+            {
+                await ctx.Channel.SendMessageAsync("Bu kullanıcı zaten kayıtlı");
+            }
+            else
+            {
+                try
+                {
+                    await user.GrantRoleAsync(memberRole);
+                    await ctx.Channel.SendMessageAsync("Kayıt Başarılı ile gerçekleşti.");
+                }
+                catch (Exception ex)
+                {
+                    await ctx.Channel.SendMessageAsync(ex.Message);
+                }
+            }
+        }
+
+        //etiketli kız kayıt
+        [Command("k")]
+        [Cooldown(15, 120, CooldownBucketType.User)]
+        public async Task TagSignGirlMember(CommandContext ctx, DiscordMember user)
+        {
+            DiscordRole memberRole = ctx.Guild.GetRole(Constants.MemberRoleId);
+            DiscordRole girlRole = ctx.Guild.GetRole(Constants.GirlRoleId);
+
+            if (ctx.Member.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) == null || !(ctx.Member.Permissions.HasPermission(Permissions.ChangeNickname)))
+            {
+                var requirePermissonMessage = "Bu komut için gerekli yetkiye sahip değilsiniz.";
+
+                await ctx.Channel.SendMessageAsync(requirePermissonMessage);
+
+                throw new Exception();
+            }
+
+            if (user.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) != null && user.Roles.FirstOrDefault(x => x.Id == Constants.GirlRoleId) != null)
+            {
+                await ctx.Channel.SendMessageAsync("Bu kullanıcı zaten kayıtlı");
+            }
+            else
+            {
+                try
+                {
+                    await user.GrantRoleAsync(memberRole);
+                    await user.GrantRoleAsync(girlRole);
+                    await ctx.Channel.SendMessageAsync("Kayıt Başarılı ile gerçekleşti.");
+                }
+                catch (Exception ex)
+                {
+                    await ctx.Channel.SendMessageAsync(ex.Message);
+                }
+            }
+        }
+
+        //id'li kız kayıt
+        [Command("k")]
+        [Cooldown(15, 120, CooldownBucketType.User)]
+        public async Task IdSignGirlMember(CommandContext ctx, ulong id)
+        {
+            DiscordRole memberRole = ctx.Guild.GetRole(Constants.MemberRoleId);
+            DiscordRole girlRole = ctx.Guild.GetRole(Constants.GirlRoleId);
+            DiscordMember user = await ctx.Guild.GetMemberAsync(id);
+
+            if (ctx.Member.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) == null || !(ctx.Member.Permissions.HasPermission(Permissions.ChangeNickname)))
+            {
+                var requirePermissonMessage = "Bu komut için gerekli yetkiye sahip değilsiniz.";
+
+                await ctx.Channel.SendMessageAsync(requirePermissonMessage);
+
+                throw new Exception();
+            }
+
+            if (user.Roles.FirstOrDefault(x => x.Id == Constants.SignerRoleId) != null)
+            {
+                await ctx.Channel.SendMessageAsync("Bu kullanıcı zaten kayıtlı");
+            }
+            else
+            {
+                try
+                {
+                    await user.GrantRoleAsync(memberRole);
+                    await user.GrantRoleAsync(girlRole);
+                    await ctx.Channel.SendMessageAsync("Kayıt Başarılı ile gerçekleşti.");
+                }
+                catch (Exception ex)
+                {
+                    await ctx.Channel.SendMessageAsync(ex.Message);
+                }
+            }
         }
     }
 }

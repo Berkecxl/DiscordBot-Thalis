@@ -133,7 +133,7 @@ namespace Discord_Bot.Commands
                 ImageUrl = ctx.User.AvatarUrl
             };
 
-            ctx.Channel.SendMessageAsync(embed: embedMessage);
+            await ctx.Channel.SendMessageAsync(embed: embedMessage);
         }
 
         [Command("oylama")]

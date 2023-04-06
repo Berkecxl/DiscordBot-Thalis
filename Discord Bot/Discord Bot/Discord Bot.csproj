@@ -164,6 +164,7 @@
     <Compile Include="Commands\GameCommands.cs" />
     <Compile Include="Build\ConfigJSON.cs" />
     <Compile Include="Commands\ModCommands.cs" />
+    <Compile Include="Constant\Constants.cs" />
     <Compile Include="Helper\BaseHelper\UserHelper.cs" />
     <Compile Include="Helper\GameCommandsHelper\RankedGameHelper.cs" />
     <Compile Include="Helper\FunCommandsHelper\RandomGifs.cs" />
